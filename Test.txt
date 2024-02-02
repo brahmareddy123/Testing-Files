@@ -1,0 +1,25 @@
+WebDriver driver = new ChromeBrowser();
+driver.get("https://www.amazon.in/ref=nav_logo");
+WebElement element = driver.findElement(by.xpath(""));
+WebElement text = element.getText();
+Actions act = new Action();
+act.contextClick(text).perform();
+ 
+for(int i=0;i<text.length();i++){
+	if(charAt(i)==" "){
+System.out.println("Space is found in given string");
+
+}
+else{
+System.Out.Println("Space not found in given string")
+}
+}
+
+
+
+
+
+
+//div[@id="nav-xshop-container"]/following-sibling::a[text()='New Releases']
+
+//div[@id='nav-xshop']/a[text()='New Releases']
